@@ -1,0 +1,13 @@
+# CANN TBE 算子 JIT 产物。落在进程 CWD 下，每次启动服务都会重新生成。
+kernel_meta/
+
+# 服务端日志与启动输出。体积大（单次服务日志约数百 KB），可重新生成。
+# 注意 results/ 不在此列 —— 那是实验数据，必须提交。
+logs/
+
+# 服务运行时状态，由 serve/stop 维护
+logs/server.pid
+logs/server.logpath
+
+__pycache__/
+*.pyc
